@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da63e9a422.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Kanchan Varma</span> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Full Stack Developer with expertise in both front-end
+                        and back-end technologies, including HTML,
+                        CSS, JavaScript, React, and Node.js.
+                        I enjoy creating seamless, user-friendly web applications and
+                        solving complex problems. My strong communication and collaboration skills ensure
+                        successful project execution. Outside of coding, I stay updated with tech trends and contribute to open-source projects.
+                        Let's build something amazing together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br><i>(Designing Web/App interfaces)</i></li>
+                            <li><span>Web Development</span><br><i>(Web app Development)</i></li>
+                            <li><span>Cyber Security</span><br><i>(Ensuring application security and data protection)</i></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-2024</span><br><i>Internship Cyber Secured India</i></li>
+                            <li><span>2024-2024</span><br><i>C4gt contributor</i></li>
+                            <li><span>2024-current</span><br><i>GSSOC contributor</i></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-current</span><br><i>Engineering specialized in Computer Science</i></li>
+                            <li><span>SSC</span></li>
+                            <li><span>HSC</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services" class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Good UI is like a joke: if you have to explain it, it’s not that good.""Great UX is invisible; it solves problems without the user even realizing."</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development </h2>
+                    <p>Crafting seamless digital experiences with clean code and creative flair.""Transforming visions into dynamic web solutions that captivate and engage.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cyber Security</h2>
+                    <p>"Securing digital landscapes with vigilance and innovation.""Defending against threats with robust cyber strategies and proactive measures."</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Weather Forecasting </h3>
+                        <p>The website shows the weather forecasting across the globe even though it shows the next 7 days prediction of the weather </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>World Clock</h3>
+                        <p>The website shows the timing across the globe and user can compare the time difference between particular country </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>DIVA app testing  </h3>
+                        <p>In this testing was done by me on the Diva app  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>varmakanchan998@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8698035436</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kanchan-varma-3b4515263/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="copyright">
+        <div class="container">
+            <p>Copyright © Made by Kanchan Varma</p>
+        </div>
+    </div>
+
+    <script>
+        function opentab(event, tabname) {
+            var i;
+            var x = document.getElementsByClassName("tab-contents");
+            var tablinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove("active-tab");
+            }
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+
+        function toggleMenu(event) {
+            event.stopPropagation(); // Prevents event from bubbling up (if needed)
+            var navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("open");
+            document.querySelector('.menu-toggle').classList.toggle("open");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', toggleMenu);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabLinks = document.querySelectorAll(".tab-links");
+            const tabContents = document.querySelectorAll(".tab-contents");
+    
+            tabLinks.forEach((tab, index) => {
+                tab.addEventListener("click", () => {
+                    tabLinks.forEach(tab => tab.classList.remove("active-link"));
+                    tabContents.forEach(content => content.classList.remove("active-tab"));
+    
+                    tabLinks[index].classList.add("active-link");
+                    tabContents[index].classList.add("active-tab");
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
